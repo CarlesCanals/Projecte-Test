@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carles Canals · Book Personal</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="bg-gradient-to-br from-blue-100 via-white to-green-100 min-h-screen flex flex-col">
-    <header class="bg-white shadow py-6">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-blue-700">Carles Canals</h1>
-            <nav class="space-x-4">
-                <a href="index.html" class="text-blue-700 font-semibold hover:underline">Inici</a>
-                <a href="login.html" class="text-gray-700 hover:text-blue-700 hover:underline">Inicia sessió</a>
-                <a href="registre.html" class="text-gray-700 hover:text-green-700 hover:underline">Registra't</a>
+<body class="bg-light min-vh-100 d-flex flex-column">
+    <header class="bg-white shadow-sm py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <h1 class="fs-2 fw-bold text-primary m-0">Carles Canals</h1>
+            <nav>
+                <a href="index.html" class="btn btn-link text-primary fw-semibold">Inici</a>
+                <a href="login.html" class="btn btn-link text-secondary">Inicia sessió</a>
+                <a href="registre.html" class="btn btn-link text-success">Registra't</a>
             </nav>
         </div>
     </header>
-    <main class="flex-1 flex flex-col items-center justify-center text-center px-4">
-        <img src="https://avatars.githubusercontent.com/u/your-github-id?v=4" alt="Foto de perfil" class="w-32 h-32 rounded-full shadow-lg mb-6 border-4 border-blue-200">
-        <h2 class="text-4xl font-extrabold text-blue-800 mb-2">Benvingut al meu Book Personal</h2>
-        <p class="text-lg text-gray-700 max-w-2xl mb-6">Sóc Carles Canals, desenvolupador web apassionat per la tecnologia, el disseny i la innovació. En aquest espai trobaràs informació sobre els meus projectes, habilitats i experiència professional.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="login.html" class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold shadow hover:bg-blue-700 transition">Inicia sessió</a>
-            <a href="registre.html" class="px-6 py-3 bg-green-600 text-white rounded-lg font-semibold shadow hover:bg-green-700 transition">Registra't</a>
+    <main class="container flex-grow-1 d-flex flex-column align-items-center justify-content-center text-center">
+        <div class="card shadow-lg p-4 mb-4 bg-white rounded-4 border-0" style="max-width: 480px; width: 100%;">
+            <img src="https://avatars.githubusercontent.com/u/your-github-id?v=4" alt="Foto de perfil" class="rounded-circle shadow mb-3 border border-3 border-primary mx-auto" style="width: 120px; height: 120px; object-fit: cover;">
+            <h2 class="fs-3 fw-bold text-primary mb-2">Benvingut al meu Book Personal</h2>
+            <p class="lead text-secondary mb-4">Sóc Carles Canals, desenvolupador web apassionat per la tecnologia, el disseny i la innovació. En aquest espai trobaràs informació sobre els meus projectes, habilitats i experiència professional.</p>
+            <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                <a href="login.html" class="btn btn-primary btn-lg px-4">Inicia sessió</a>
+                <a href="registre.html" class="btn btn-success btn-lg px-4">Registra't</a>
+            </div>
         </div>
     </main>
-    <footer class="bg-white shadow py-4 mt-8">
-        <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
+    <footer class="bg-white shadow-sm py-3 mt-auto border-top">
+        <div class="container text-center text-muted small">
             © 2025 Carles Canals · Book Personal
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

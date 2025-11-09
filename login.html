@@ -18,6 +18,8 @@
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
         }
     </style>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
 </head>
 <body class="min-vh-100 d-flex flex-column">
     <header class="bg-white shadow-sm py-3 mb-4 border-bottom">
@@ -41,6 +43,10 @@
                 <div class="mb-3 text-start">
                     <label for="password" class="form-label">Contrasenya</label>
                     <input type="password" id="password" name="password" required class="form-control">
+                </div>
+                <!-- Turnstile -->
+                <div class="cf-turnstile"
+                    data-sitekey="0x4AAAAAAB_-v0PPzLXccak0">
                 </div>
                 <div class="d-grid mb-2">
                     <button type="submit" class="btn btn-primary btn-lg">Inicia sessió</button>
